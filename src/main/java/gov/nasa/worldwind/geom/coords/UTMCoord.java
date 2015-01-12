@@ -220,12 +220,11 @@ public class UTMCoord
     }
 
     public String toString()
-    {
-        StringBuilder sb = new StringBuilder();
-        sb.append(zone);
-        sb.append(" ").append(AVKey.NORTH.equals(hemisphere) ? "N" : "S");
-        sb.append(" ").append(easting).append("E");
-        sb.append(" ").append(northing).append("N");
-        return sb.toString();
-    }
+	{
+		StringBuilder sb = new StringBuilder();
+		sb.append(zone).append(AVKey.NORTH.equals(hemisphere) ? "N" : "S");
+		sb.append(" ").append(Math.round(easting));
+		sb.append(" ").append(Math.round(northing));
+		return sb.toString();
+	}
 }
