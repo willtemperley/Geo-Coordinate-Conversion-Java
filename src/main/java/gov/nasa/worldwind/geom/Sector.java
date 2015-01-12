@@ -78,21 +78,6 @@ public class Sector implements Comparable<Sector>, Iterable<LatLon>
     }
 
     /**
-     * Creates a new <code>Sector</code> and initializes it to the angles resulting from the given {@link
-     * java.awt.geom.Rectangle2D} in degrees lat-lon coordinates where x corresponds to longitude and y to latitude. The
-     * resulting geographic angles are assumed to be normalized to +/- 90 degrees latitude and +/- 180 degrees
-     * longitude, but this method does not verify that.
-     *
-     * @param rectangle the sector's rectangle in degrees lat-lon coordinates.
-     *
-     * @return the new <code>Sector</code>
-     */
-    public static Sector fromDegrees(java.awt.geom.Rectangle2D rectangle)
-    {
-        return fromDegrees(rectangle.getY(), rectangle.getMaxY(), rectangle.getX(), rectangle.getMaxX());
-    }
-
-    /**
      * Creates a new <code>Sector</code> and initializes it to the specified angles. The angles are assumed to be
      * normalized to +/- \u03c0/2 radians latitude and +/- \u03c0 radians longitude, but this method does not verify
      * that.
