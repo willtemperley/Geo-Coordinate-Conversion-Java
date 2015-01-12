@@ -139,13 +139,13 @@ public class Angle implements Comparable<Angle>
      *
      * @throws IllegalArgumentException if minutes or seconds are outside the 0-60 range.
      */
-    public static Angle fromDMS(int degrees, int minutes, int seconds)
+    public static Angle fromDMS(int degrees, int minutes, double seconds)
     {
         if (minutes < 0 || minutes >= 60)
         {
             throw new IllegalArgumentException("Argument Out Of Range");
         }
-        if (seconds < 0 || seconds >= 60)
+        if (seconds < 0 || seconds >= 60d)
         {
             throw new IllegalArgumentException("Argument Out Of Range");
         }
@@ -153,7 +153,7 @@ public class Angle implements Comparable<Angle>
         return Angle.fromDegrees(Math.signum(degrees) * (Math.abs(degrees) + minutes / 60d + seconds / 3600d));
     }
 
-    public static Angle fromDMdS(int degrees, double minutes)
+    public static Angle fromDM(int degrees, double minutes)
     {
         if (minutes < 0 || minutes >= 60)
         {
