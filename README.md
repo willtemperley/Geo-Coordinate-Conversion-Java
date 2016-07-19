@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/andreynovikov/Geo-Coordinate-Conversion-Java.svg?branch=master)](https://travis-ci.org/andreynovikov/Geo-Coordinate-Conversion-Java)
+
+This is a fork of the NASA library which:
+
+1. Removes AWT dependencies
+2. Adds gradle support
+
 # Geo-Coordinate-Conversion-Java
 
 Functionality for Converting between different Geospatial Coordinate Systems (Lat/Lon, UTM, UPS, and MGRS) from the NASA World Wind project (which they translated from the GDAL library written in C), minus all of the dependencies on AWT, Graphics Libraries, their custom Logging system, etc. 
