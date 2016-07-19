@@ -1,0 +1,7 @@
+# configuration for https://travis-ci.org/andreynovikov/Geo-Coordinate-Conversion-Java
+sudo: false
+language: java
+jdk:
+  - openjdk7
+  - oraclejdk7
+  - oraclejdk8
