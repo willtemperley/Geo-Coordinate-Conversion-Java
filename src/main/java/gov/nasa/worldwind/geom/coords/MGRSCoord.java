@@ -42,7 +42,6 @@ public class MGRSCoord
      *
      * @param latitude the latitude <code>Angle</code>.
      * @param longitude the longitude <code>Angle</code>.
-     * @param globe the <code>Globe</code> - can be null (will use WGS84).
      * @param precision the number of digits used for easting and northing (1 to 5).
      * @return the corresponding <code>MGRSCoord</code>.
      * @throws IllegalArgumentException if <code>latitude</code> or <code>longitude</code> is null,
@@ -77,7 +76,6 @@ public class MGRSCoord
      * 11S KU 528 111<br />
      * </p>
      * @param MGRSString the MGRS coordinate text string.
-     * @param globe the <code>Globe</code> - can be null (will use WGS84).
      * @return the corresponding <code>MGRSCoord</code>.
      * @throws IllegalArgumentException if the <code>MGRSString</code> is null or empty,
      * the <code>globe</code> is null, or the conversion to geodetic coordinates fails (invalid coordinate string).
